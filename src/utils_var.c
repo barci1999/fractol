@@ -13,12 +13,9 @@
 
 void	var_init(t_data *data)
 {
-	data->running = 1;
-	data->color_state = 0;
 	data->color = 0xff0000;
 	data->max_iter = 75;
-	data->center_re = 0.0;
-	data->center_img = 0.0;
+
 	data->zoom_factor = 1.0;
 	data->width = 800;
 	data->height = 800;

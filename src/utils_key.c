@@ -36,7 +36,6 @@ int	arrow_control(int keycode, t_data *data)
 		data->x_max -= move;
 		data->x_min -= move;
 	}
-	data->running = 1;
 	return (0);
 }
 
@@ -44,7 +43,6 @@ int	esc_control(int keycode, t_data *data)
 {
 	if (keycode == XK_Escape)
 		close_win(data);
-	data->running = 1;
 	return (0);
 }
 
@@ -67,7 +65,6 @@ int	c_color_control(int keycode, t_data *data)
 		data->color_set = (data->color_set + 1) % 2;
 		draw_julia(data);
 	}
-	data->running = 1;
 	return (0);
 }
 
@@ -79,6 +76,5 @@ int	keys_contol(int keycode, t_data *data)
 		esc_control(keycode, data);
 	else
 		arrow_control(keycode, data);
-	data->running = 1;
 	return (0);
 }

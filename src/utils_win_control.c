@@ -34,20 +34,11 @@ int	close_win(t_data *data)
 
 int	refresh(t_data *data)
 {
-	if (data->running && ft_strncmp(data->fractal_type, "Burningship", 11) == 0)
-	{
+	if (ft_strncmp(data->fractal_type, "Burningship", 11) == 0)
 		draw_burning(data);
-		data->running = 0;
-	}
-	if (data->running && ft_strncmp(data->fractal_type, "Mandelbrot", 10) == 0)
-	{
+	if (ft_strncmp(data->fractal_type, "Mandelbrot", 10) == 0)
 		draw_mandel(data);
-		data->running = 0;
-	}
-	if (data->running && ft_strncmp(data->fractal_type, "Julia", 5) == 0)
-	{
+	if (ft_strncmp(data->fractal_type, "Julia", 5) == 0)
 		draw_julia(data);
-		data->running = 0;
-	}
 	return (0);
 }

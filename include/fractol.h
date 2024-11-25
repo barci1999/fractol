@@ -36,15 +36,11 @@ typedef struct s_data
 	int		max_iter;
 	int		height;
 	int		width;
-	int		x;
-	int		y;
 	double	c_re;
 	double	c_img;
 	int		color;
 	int		size_x;
 	int		size_y;
-	double	center_re;
-	double	center_img;
 	double	zoom_factor;
 	double	x_min;
 	double	x_max;
@@ -54,8 +50,6 @@ typedef struct s_data
 	int		*pixels;
 	int		bits_per_pixel;
 	int		line_length;
-	int		running;
-	int		color_state;
 	int		endian;
 	int		color_set;
 	double	z_img;
