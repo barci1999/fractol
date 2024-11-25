@@ -28,7 +28,6 @@ void	zoom_in(t_data *data, int x, int y)
 	data->x_max = mouse_re + range * (data->size_x / (double)data->size_y);
 	data->y_min = mouse_img - range;
 	data->y_max = mouse_img + range;
-
 }
 
 void	zoom_out(t_data *data, int x, int y)
@@ -48,7 +47,6 @@ void	zoom_out(t_data *data, int x, int y)
 	data->x_max = mouse_re + range * (data->size_x / (double)data->size_y);
 	data->y_min = mouse_img - range;
 	data->y_max = mouse_img + range;
-
 }
 
 int	mouse_control(int button, int x, int y, void *param)
